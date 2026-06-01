@@ -1,0 +1,14 @@
+.card{
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    background-color: plum;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+.card-head{
+    text-align: center;
+    color: white;
+}
