@@ -1,0 +1,17 @@
+.grid-container{
+    width: 75%;
+    height: 400px;
+    background-color:brown;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+    gap: 5px;
+    
+}
+
+.grid-item{
+    background-color: burlywood;
+    text-align: center;
+    border: 1px solid ;
+}

@@ -1,0 +1,19 @@
+.flex-container{
+    background-color: violet;
+    width: 75%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.flex-item{
+    width: 20%;
+    height: 200px;
+    background-color: purple;
+    border: 1px solid plum;
+    text-align: center;
+    padding-top: 20px;
+}

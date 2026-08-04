@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* --- CSS GRID STRUCTURE MATCHING WIREFRAME --- */
+.resume-container {
+    background-color: #ffffff;
+    width: 900px;
+    min-height: 1100px;
+    display: grid;
+    grid-template-columns: 180px 1fr;   /* Column widths matching image 1 */
+    grid-template-rows: 90px auto;     /* Initial header height specification */
+    gap: 15px;                         /* Visual layout separation */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Explicit Line Alignments */
+.header {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    background-color: #2b236e; /* Deep purple from preview */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #ecf0f9; /* Soft tint backdrop for styling sidebar */
+    padding: 15px;
+}
+
+.experience {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 15px 25px 5px 10px;
+}
+
+.education {
+    grid-column: 2;
+    padding: 5px 25px 5px 10px;
+}
+
+.skills-summary {
+    grid-column: 2;
+    padding: 5px 25px 5px 10px;
+}
+
+.projects {
+    grid-column: 2;
+    padding: 5px 25px 20px 10px;
+}
+
+/* --- COMPONENT STYLING --- */
+
+/* Header Components */
+.avatar {
+    width: 55px;
+    height: 55px;
+    background-color: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.header-info h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.header-info h2 {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #b0a8f0;
+    margin-bottom: 4px;
+}
+
+.contact-bar {
+    font-size: 0.75rem;
+    color: #e2e0f7;
+}
+
+.contact-bar span {
+    margin-right: 15px;
+}
+
+/* Sidebar Components */
+.side-block {
+    margin-bottom: 25px;
+}
+
+.side-block h3 {
+    font-size: 0.8rem;
+    color: #4338ca;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d1d5db;
+    padding-bottom: 3px;
+}
+
+.side-block p {
+    font-size: 0.75rem;
+    color: #374151;
+    margin-bottom: 5px;
+}
+
+/* Skill Progress Bars */
+.skill-item {
+    margin-bottom: 8px;
+    font-size: 0.75rem;
+}
+
+.progress-bar {
+    background-color: #dbeafebf;
+    height: 5px;
+    border-radius: 3px;
+    margin-top: 3px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #4338ca;
+    height: 100%;
+}
+
+/* Tools Tags */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tag {
+    background-color: #e0e7ff;
+    color: #4338ca;
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid #c7d2fe;
+}
+
+/* Main Content Typography Styling */
+section h3 {
+    font-size: 0.9rem;
+    color: #1f2937;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.job, .edu-item, .project-item {
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 0.85rem;
+    color: #111827;
+    font-weight: 600;
+}
+
+.job-meta {
+    font-size: 0.75rem;
+    color: #6b7280;
+    margin-bottom: 5px;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+li {
+    font-size: 0.75rem;
+    color: #374151;
+    margin-bottom: 3px;
+    line-height: 1.3;
+}
+
+.edu-item p, .project-item p, .skills-summary p {
+    font-size: 0.75rem;
+    color: #374151;
+    line-height: 1.4;
+}
